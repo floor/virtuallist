@@ -1,0 +1,41 @@
+{
+  "name": "virtuallist",
+  "version": "0.1.0",
+  "description": "Low-level benchmark measurement primitives for virtual list libraries",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "bun run build.ts",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "bun run build"
+  },
+  "keywords": [
+    "benchmark",
+    "virtual-list",
+    "virtual-scroll",
+    "performance",
+    "measurement"
+  ],
+  "author": "Floor",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/floor/virtuallist.git"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.8.3"
+  }
+}
