@@ -18,9 +18,9 @@ jobs:
       - run: bun test
       - run: bun run build
 
-      - run: npm publish
+      - run: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc && npm publish
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Create GitHub Release
         run: gh release create ${{ github.ref_name }} --generate-notes
