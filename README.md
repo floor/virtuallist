@@ -7,7 +7,7 @@ Used by [virtuallist.io](https://virtuallist.io) and [vlist.io](https://vlist.io
 ## Install
 
 ```bash
-npm install virtuallist
+npm install @floor/virtuallist
 ```
 
 ## Usage
@@ -19,7 +19,7 @@ import {
   measureMemoryDelta,
   median,
   findViewport,
-} from "virtuallist";
+} from "@floor/virtuallist";
 
 // Measure render time
 const { duration } = await measureDuration("render", () => {

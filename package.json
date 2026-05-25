@@ -1,5 +1,5 @@
 {
-  "name": "virtuallist",
+  "name": "@floor/virtuallist",
   "version": "0.1.0",
   "description": "Low-level benchmark measurement primitives for virtual list libraries",
   "type": "module",
